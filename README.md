@@ -6,16 +6,13 @@
 - 171 道面试题（含考点 / 答法 / 追问三层）
 - 50 道 LeetCode + 18 道手撕题
 
-## 部署到 GitHub Pages
+## 在线访问
 
-1. 新建一个 **public** 仓库（例如 `aiqiuzhao`）
-2. 把本目录下的 `index.html`、`jobs.js`、`.nojekyll` 三个文件上传到仓库根目录
-3. 仓库 → Settings → Pages → Source 选 `Deploy from a branch`，Branch 选 `main` / `root`，保存
-4. 等 1-2 分钟，访问 `https://<你的用户名>.github.io/aiqiuzhao/`
+https://zhang-jia001.github.io/qiuzhao-archive/
 
-## 注意
+## 说明
 
-- `jobs.js` 必须和 `index.html` 一起上传，否则岗位库为空（题库和路线不受影响）。
+- 页面纯静态，不需要后端；勾选进度存在浏览器本地（换设备不同步）。
+- `jobs.js` 是岗位数据，必须和 `index.html` 同层，缺了岗位库会空。
 - `.nojekyll` 用来关掉 GitHub 的 Jekyll 处理，别删。
-- 页面所有数据都是静态的，不需要后端；勾选进度存在浏览器本地。
-- 岗位数据来自本地校招内推表，投递前请以企业官网实时状态为准。
+- 岗位数据来自校招内推表，投递前以企业官网实时状态为准。
