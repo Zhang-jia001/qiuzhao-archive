@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>上岸指南 · AI 全栈 &amp; AI 创造者秋招</title>
-<meta name="description" content="2027 届秋招：3823 家企业开发研发岗、171 道面试题、68 道算法题。面向 AI 全栈开发与 AI 创造者学生的投递与面试工作台。">
+<meta name="description" content="2027 届秋招：4043 家企业开发研发岗、171 道面试题、68 道算法题。面向 AI 全栈开发与 AI 创造者学生的投递与面试工作台。">
 <meta property="og:title" content="上岸指南 · AI 全栈 & AI 创造者秋招">
-<meta property="og:description" content="3823 家企业 · 12 个方向 · 171 道面试题 · 68 道算法题">
+<meta property="og:description" content="4043 家企业 · 12 个方向 · 171 道面试题 · 68 道算法题">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#e8622c">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20rx%3D%225.6%22%20fill%3D%22%23e8622c%22%2F%3E%3Cpath%20d%3D%22M4.5%2019.9h15%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20opacity%3D%22.38%22%2F%3E%3Cg%20transform%3D%22matrix%280.8%2C0%2C0%2C0.8%2C2.4%2C1.1%29%22%3E%3Cpath%20d%3D%22M9%205v2h6.59L5%2017.59%206.41%2019%2017%208.41V15h2V5z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
@@ -132,7 +132,8 @@ h3{font-size:15.5px;margin:24px 0 10px;letter-spacing:-.2px}
 .jlist{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .jr{
   display:grid;grid-template-columns:190px 1fr 170px 86px;gap:13px;align-items:center;
-  padding:11px 16px;border-bottom:1px solid var(--line2);font-size:13px
+  padding:11px 16px;border-bottom:1px solid var(--line2);font-size:13px;
+  content-visibility:auto;contain-intrinsic-size:auto 48px
 }
 .jr:last-child{border-bottom:none}
 .jr:hover{background:#fcfcfd}
@@ -142,8 +143,10 @@ h3{font-size:15.5px;margin:24px 0 10px;letter-spacing:-.2px}
 .jr .ct{color:var(--ink3);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .jr .ap{text-align:right;font-size:12px;font-weight:600}
 .jr .ap.mail{color:var(--ink3);font-weight:500;font-size:11px}
-.more{text-align:center;padding:13px;font-size:12.5px;color:var(--ink3);cursor:pointer;background:#fafbfc;border-top:1px solid var(--line2)}
+.more{text-align:center;padding:13px;font-size:12.5px;color:var(--ink3);cursor:pointer;background:#fafbfc;border-top:1px solid var(--line2);user-select:none}
 .more:hover{color:var(--a)}
+.more.done{cursor:default;color:var(--ink3)}
+.more.done:hover{color:var(--ink3)}
 .famtag{font-size:10px;padding:1px 6px;border-radius:4px;background:var(--bg);color:var(--ink3);white-space:nowrap}
 
 /* ============ quiz ============ */
@@ -376,6 +379,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-si
 }
 @media (max-width:620px){
   main{padding:18px 14px 80px}
+  .hd{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
   .hd-in{padding:0 14px;gap:12px;height:54px}
   .hd-tip{display:none}
   .logo small{display:none}
@@ -415,7 +419,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-si
       <button data-v="resume">简历投递</button>
       <button data-v="res">资源</button>
     </nav>
-    <div class="hd-tip" id="hdTip">3823 家企业 · 171 题</div>
+    <div class="hd-tip" id="hdTip">4043 家企业 · 171 题</div>
   </div>
 </header>
 
@@ -427,7 +431,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-si
     <h1>先找对岗位，再练对题</h1>
     <p class="lead">同一份「AI 岗」简历，投 AI 全栈和投 AI 创造者，考官问的完全是两套问题。这里按方向拆开：每条岗位带投递入口，每道题标了「考官在验什么」。</p>
     <div class="kpis">
-      <div class="kpi"><b id="kJobs">3823</b><span>家企业在招开发研发岗</span></div>
+      <div class="kpi"><b id="kJobs">4043</b><span>家企业在招开发研发岗</span></div>
       <div class="kpi"><b>12</b><span>个方向</span></div>
       <div class="kpi"><b id="kQuiz">171</b><span>道面试题（含答法）</span></div>
       <div class="kpi"><b>68</b><span>道算法题</span></div>
@@ -488,7 +492,7 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-si
 <!-- ======================= 岗位库 ======================= -->
 <section class="view" id="v-jobs">
   <h2>岗位库</h2>
-  <p class="lead" style="margin-bottom:16px">3823 家企业，按 12 个岗位方向归类。一家企业可能同时招多个方向，所以各方向相加会大于总数。</p>
+  <p class="lead" style="margin-bottom:16px">4043 家企业，按 12 个岗位方向归类。一家企业可能同时招多个方向，所以各方向相加会大于总数。</p>
 
   <div class="toolbar">
     <div class="chips" id="famChips"></div>
@@ -736,8 +740,8 @@ document.querySelectorAll('.path').forEach(p=>{
 
 /* ================= 岗位库 ================= */
 const JOBS = window.JOBS || null;
-let curFam='all', kw='', onlyBig=false, expanded=false;
-const PAGE=40;
+const PAGE=40, STEP=120;
+let curFam='all', kw='', onlyBig=false, shown=PAGE, curLen=0;
 const chipsEl=document.getElementById('famChips');
 const jBody=document.getElementById('jBody');
 const jMore=document.getElementById('jMore');
@@ -771,7 +775,8 @@ function renderJobs(){
     list=list.filter(j=>(j.n+j.j.join('')+j.c).toLowerCase().includes(k));
   }
   document.getElementById('jCount').textContent=list.length.toLocaleString()+' 家'+(onlyBig?'（仅大厂）':'');
-  const lim=expanded?list.length:Math.min(list.length,PAGE);
+  curLen=list.length;
+  const lim=Math.min(list.length,shown);
   jBody.innerHTML=list.slice(0,lim).map(j=>{
     const js=j.j.slice(0,3).map(esc).join(' · ')+(j.j.length>3?' <span style="color:#8a93a1">+'+ (j.j.length-3)+'</span>':'');
     const ap=j.l&&j.l.startsWith('http')
@@ -782,17 +787,37 @@ function renderJobs(){
       '<div class="js" title="'+esc(j.j.join(' · '))+'">'+js+'</div>'+
       '<div class="ct" title="'+esc(j.c)+'">'+esc(j.c)+'</div>'+ap+'</div>';
   }).join('') || '<div style="padding:30px;text-align:center;color:#8a93a1;font-size:13px">没有匹配的企业，换个关键词试试。</div>';
-  jMore.style.display=list.length>PAGE?'block':'none';
-  jMore.textContent=expanded?'收起 ↑':'展开全部 '+list.length+' 家 ↓';
+  const rest=list.length-lim;
+  if(rest>0){
+    jMore.style.display='block';
+    jMore.className='more';
+    jMore.textContent='再看 '+Math.min(rest,STEP)+' 家（还剩 '+rest.toLocaleString()+' 家）↓';
+  }else if(list.length>PAGE){
+    jMore.style.display='block';
+    jMore.className='more done';
+    jMore.textContent='已全部显示（'+list.length.toLocaleString()+' 家）';
+  }else{
+    jMore.style.display='none';
+    jMore.className='more';
+  }
 }
 chipsEl.addEventListener('click',e=>{
   const b=e.target.closest('.chip'); if(!b)return;
   [...chipsEl.children].forEach(x=>x.classList.remove('on'));
-  b.classList.add('on'); curFam=b.dataset.f; expanded=false; renderJobs();
+  b.classList.add('on'); curFam=b.dataset.f; shown=PAGE; renderJobs();
 });
-document.getElementById('jq').addEventListener('input',e=>{kw=e.target.value.trim();expanded=false;renderJobs();});
-document.getElementById('onlyBig').addEventListener('change',e=>{onlyBig=e.target.checked;expanded=false;renderJobs();});
-jMore.addEventListener('click',()=>{expanded=!expanded;renderJobs();});
+let kwTimer=null;
+document.getElementById('jq').addEventListener('input',e=>{
+  const v=e.target.value.trim();
+  clearTimeout(kwTimer);
+  kwTimer=setTimeout(()=>{ kw=v; shown=PAGE; renderJobs(); },160);
+});
+document.getElementById('onlyBig').addEventListener('change',e=>{onlyBig=e.target.checked;shown=PAGE;renderJobs();});
+jMore.addEventListener('click',()=>{
+  if(shown>=curLen) return;
+  shown+=STEP;
+  renderJobs();
+});
 renderJobs();
 
 /* ================= 题库 ================= */
